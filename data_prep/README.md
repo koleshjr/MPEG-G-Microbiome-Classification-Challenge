@@ -18,6 +18,8 @@ Data/
 │     └── sample.fastq
 ├── TestFastQ/
 │     └── sample.fastq
+|── Train.csv
+|── Test.csv
 ```
 
 - If you have `.mgb` files, store them in `TrainFiles/` and `TestFiles/`.

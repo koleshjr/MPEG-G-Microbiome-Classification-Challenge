@@ -1,5 +1,11 @@
 data_prep/.venv
 data_prep/__pycache__/
 
+centralised_modellinhg/.venv
+centralised_modellinhg/__pycache__/
+
+federrated_modelling/.venv
+federrated_modelling/__pycache__/
+
 .venv
 

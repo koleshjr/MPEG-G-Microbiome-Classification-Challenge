@@ -1,7 +1,52 @@
 [project]
-name = "federated-modelling"
+name = "mpeg-federated"
 version = "0.1.0"
-description = "Add your description here"
+description = "Federated XGBoost with Flower (Fold-based)"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "flwr>=1.21.0",
+    "numpy>=2.3.3",
+    "pandas>=2.3.2",
+    "scikit-learn>=1.7.2",
+    "xgboost>=3.0.5",
+]
+
+[tool.flwr.federations.local-federation]
+address = "127.0.0.1:9093"
+insecure = true
+
+[tool.flwr.app]
+publisher = "mpeg-experiment"
+
+[tool.flwr.app.components]
+serverapp = "server:app"
+clientapp = "client:app"
+
+[tool.flwr.app.config]
+data_path = "Data/train_with_5_folds_gkf.csv"
+train_method = "bagging"
+cv_method  = "gkf"
+num-server-rounds = 5
+fraction-fit = 1.0
+fraction-evaluate = 1.0
+centralised-eval = false
+num_local_round = 500
+test_fraction = 0.1
+seed = 42
+local-epochs = 1
+scaled-lr = false
+
+params.objective = "multi:softprob"
+params.num_class = 4
+params.eval_metric = "mlogloss"
+params.verbosity = 0
+params.tree_method = "hist"
+params.random_state = 42
+params.learning_rate = 0.02906118152230375
+params.max_depth = 11
+params.min_child_weight = 2
+params.subsample = 0.5471809612034713
+params.colsample_bytree = 0.8656215107130768
+params.lambda = 0.17474568803133841
+params.alpha = 0.009532338933614777

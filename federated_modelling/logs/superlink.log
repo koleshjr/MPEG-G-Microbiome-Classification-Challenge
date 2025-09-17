@@ -1,0 +1,42 @@
+[92mINFO [0m:      Start `flwr-serverapp` process
+🎊 Successfully installed mpeg-federated to /root/.flwr/apps/mpeg-experiment.mpeg-federated.0.1.0.a49f6b85.
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=5, no round_timeout
+[92mINFO [0m:      
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Using initial global parameters provided by strategy
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      Evaluation returned no results (`None`)
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      ✅ Saved global XGB model at round 1 to Models/final_global_model_500_5_bagging_gkf.json
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      ✅ Saved global XGB model at round 2 to Models/final_global_model_500_5_bagging_gkf.json
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      ✅ Saved global XGB model at round 3 to Models/final_global_model_500_5_bagging_gkf.json
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      ✅ Saved global XGB model at round 4 to Models/final_global_model_500_5_bagging_gkf.json
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_evaluate: received 5 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 5)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+[92mINFO [0m:      ✅ Saved global XGB model at round 5 to Models/final_global_model_500_5_bagging_gkf.json
+[92mINFO [0m:      configure_evaluate: strategy sampled 5 clients (out of 5)
