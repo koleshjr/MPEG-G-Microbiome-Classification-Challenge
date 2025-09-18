@@ -106,11 +106,25 @@ This script will:
 
 ---
 
-## Logs and Models
+## Viewing Training Logs for Different Clients and Models 
 
-- **Logs:**  
-  - All federation activity is logged in the `logs/` directory for debugging and auditing.
-  - Includes logs for the server, each supernode, and the overall federation.
+During federated training, each client and the server generate detailed logs to help you monitor progress, debug issues, and analyze the training process. These logs are automatically saved in the `logs/` directory.
+
+- **Client Logs:**  
+  Each client writes its own log file (e.g., `supernode_0.log`, `supernode_1.log`, etc.), which contains information about local training, communication with the server, and model updates.
+
+- **Server and Federation Logs:**  
+  The server and federation process also write logs such as `superlink.log` and `local_federation.log`, capturing aggregation steps, round completions, and global model updates.
+
+To inspect the training process for any client, simply open the corresponding log file in the `logs/` directory:
+
+```bash
+cat supernode_0.log
+cat supernode_1.log
+# ...and so on for other clients
+```
+
+These logs provide transparency into each client's training, data splits, and the overall federated workflow.
 
 - **Models:**  
   - Final global models are saved in `Models/` (e.g., `final_global_model_500_5_bagging_gkf.json`).
